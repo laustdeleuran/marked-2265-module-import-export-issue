@@ -5,9 +5,9 @@ This is a minimal reproduction of the [issue I'm experiencing using Marked v4 wi
 To reproduce this issue please clone this repository and run:
 
 ```console
-./ $ p i
+./ $ pnpm i
 ./ $ cd some-cra
-./some-cra $ p start
+./some-cra $ pnpm start
 ```
 
 You should now see the error in question in the developer console:
