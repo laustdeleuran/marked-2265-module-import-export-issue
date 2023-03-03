@@ -1,0 +1,3 @@
+packages:
+  - "some-cra"
+  - "packages/i-got-marked"

@@ -1,0 +1,22 @@
+# Mac OS
+.DS_Store
+
+# Local environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Local feature flag overrides
+.featureFlags.json
+
+# Node.js
+node_modules/
+
+# Logs
+npm-debug.log*
+
+# Caches
+.eslintcache
+
+.pnp.*

@@ -1,0 +1,49 @@
+{
+    "presets": [
+      [
+        "@babel/preset-typescript",
+        {
+          "isTSX": true,
+          "allExtensions": true
+        }
+      ],
+      [
+        "@babel/preset-env",
+        {
+          "modules": "cjs",
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ],
+    "ignore": ["node_modules"],
+    "comments": false,
+    "plugins": [
+      [
+        "module-resolver",
+        {
+          "root": ["./"],
+          "alias": {
+            "src": "./src",
+            "test": "./test"
+          }
+        }
+      ]
+    ],
+    "env": {
+      "test": {
+        "presets": [
+          [
+            "@babel/preset-env",
+            {
+              "targets": {
+                "esmodules": true
+              }
+            }
+          ]
+        ]
+      }
+    }
+  }
+  
